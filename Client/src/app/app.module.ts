@@ -12,6 +12,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
+import { HomeModule } from './home/home.module';
+import { CoreModule } from './core/core.module';
+import { AccountModule } from './account/account.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,10 @@ import { ShippingComponent } from './shipping/shipping.component';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AccountModule,
+    HomeModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
